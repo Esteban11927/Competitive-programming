@@ -5,9 +5,7 @@ int mat[210][210];
 int dp[210][210];
 int ans = 0;
 int main(){
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  ios_base::sync_with_stdio(false);  cin.tie(NULL);
   int t;
   cin >> t;
   for(int k = 1; k <= t; k++){
@@ -46,12 +44,6 @@ int main(){
       aux += flag;
     }
     cout <<"Case " << k << ": " << dp[2*n-2][0] << '\n';
-    /*for(int i = 0; i <= 2*n; i++){
-        for(int j = 0; j <= n; j++){
-            cout << dp[i][j] << ' ';
-        }
-        cout << '\n';
-    }*/
     for(int i = 0; i < 210; i++){
         for(int j = 0; j < 210; j++){
             dp[i][j] = 0;
