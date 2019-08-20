@@ -25,10 +25,7 @@ int main(){
             cin >> arr[i];
             if(arr[i] == 1) start = i;
         }
-        if(clockwise(start, arr)){
-            cout << "YES\n";    continue;
-        }
-        if(counterclockwise(start+1, arr)){
+        if(clockwise(start, arr) || counterclockwise(start + 1, arr)){
             cout << "YES\n";    continue;
         }
         else cout << "NO\n";
