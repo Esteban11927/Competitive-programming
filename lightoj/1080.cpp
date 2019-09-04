@@ -39,10 +39,10 @@ int query(int node, int start, int end, int x, int *tree){
     }
     int mid = (start + end) >> 1;
     if(start <= x && x <= mid){
-        query(2*node, start, mid, x, tree);
+        return query(2*node, start, mid, x, tree);
     }
     else{
-        query(2*node+1, mid+1, end, x, tree);
+        return query(2*node+1, mid+1, end, x, tree);
     }
 }
  
