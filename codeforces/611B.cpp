@@ -9,6 +9,7 @@ int main(){
         x = x*2 + 1;
         allinones.emplace_back(x);
     }
+    
     for(int i = 0; i < allinones.size(); i++){
         for(int j = 0; j < 60; j++){
             long long int temp = allinones[i] - (((long long int)(1)) << j);
