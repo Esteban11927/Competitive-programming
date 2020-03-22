@@ -5,10 +5,8 @@ int main(){
 	cin >> t;
 	while(t--){
 		cin >> l >> v >> a >> b;
-		a += a%v;
-		b -= b%v;
-        cout << a << ' ' << b << '\n';
-		cout << max(0, l/v - abs(b-a)/v - 1) << '\n';
+		cout << l/v << ' ' << b/v << ' ' << a/v << ' ' << a%v << '\n';
+		cout << l/v - (b/v-a/v + (a%v == 0)) << '\n';
 	}
 	return 0;
 }
